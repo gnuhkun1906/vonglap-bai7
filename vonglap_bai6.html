@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let Tong = 0;
+    let N ='';
+    for (i = 1; ; i++) {
+        if (i % 7 == 0) {
+            N += i+'<br>';
+            Tong += i;
+            count++
+            if (count == 30) break;
+        }
+    }
+    document.write('Dãy số:  ' + N + '<br>');
+    document.write('Tổng :  ' + Tong)
+
+</script>
+</body>
+</html>

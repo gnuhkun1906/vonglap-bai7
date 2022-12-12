@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let input1 = Number(prompt("Trò chơi đoán số từ 0 - "));
+    let input2 = Number(prompt("Nhập vào số muốn đoán"));
+    let soRamdom;
+    if (input1) {
+        soRamdom = Math.floor(Math.random() * input1)
+        if (soRamdom == input2) {
+            alert('Bạn đã đoán đúng')
+        } else {
+            while (soRamdom != input2) {
+                alert("Bạn đoán sai, số đúng là " + soRamdom)
+                input2 = Number(prompt("Nhập vào số muốn đoán"))
+            }
+            alert("Bạn đoán đúng")
+        }
+    }
+</script>
+</body>
+</html>

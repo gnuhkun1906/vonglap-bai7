@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let inputFrom=+prompt('Nhập số bắt đầu:  ');
+  let inputTo=+prompt('Nhập só cuối :  ');
+  let soBandoan=+prompt('Nhập số bạn đoán:  ');
+  let random=Math.floor(Math.random()*(inputTo-inputFrom))+inputFrom;
+  if(soBandoan==random){
+    alert('Chúc mừng ,bạn đã chiến thắng')
+  }else if (soBandoan>random){
+      alert('Rất tiếc, số bạn đoán lớn hơn'+random);
+      soBandoan=+prompt('Nhập số bạn đoán:  ')
+    }else{
+    alert('Rất tiếc, số bạn đoán nhỏ hơn'+random);
+    soBandoan=+prompt('Nhập số bạn đoán:  ');
+  }  alert('Chúc mừng ,bạn đã chiến thắng')
+</script>
+</body>
+</html>
